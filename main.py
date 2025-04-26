@@ -3,8 +3,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Optional
 import uvicorn
-from .pdf_service import generate_pdf
-from .invoice_generator import generate_invoice_html
+from pdf_service import generate_pdf
+from invoice_generator import generate_invoice_html
 
 app = FastAPI(title="Invoice Generator API")
 
